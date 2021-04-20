@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "paths": {
+            "*": [
+                "./*"
+            ],
+            "src/*": [
+                "./src/*"
+            ],
+        },
+        "types": [
+            "node",
+            "webdriverio/sync",
+            "@wdio/mocha-framework",
+            "expect-webdriverio",
+        ]
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./config/**/*.ts"
+    ],
+    "exclude": [
+        "./node_modules"
+    ],
+    "compileOnSave": false
+}
